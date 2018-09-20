@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<h2>hello world</h2>
+	<h2>hello world! 1team</h2>
 	<!-- <a href="#">ajax 이용</a><br/><br/><br/> -->
 	<input type="button" value="Hello AJAX!" id="ajaxBtn">
 	

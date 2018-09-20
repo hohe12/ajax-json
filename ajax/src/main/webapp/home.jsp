@@ -11,16 +11,23 @@
 	<a href="responsebody.json">ResponseBody이용</a><br/><br/>
 	<a href="jacksonview.json">JacksonView이용</a><br/><br/>
 	<a href="restcontroller.json">RestController이용</a><br/><br/>
-	<a href="#">ajax 이용</a><br/><br/><br/>
+	<!-- <a href="#">ajax 이용</a><br/><br/><br/> -->
+	<input type="button" value="Hello AJAX!" id="ajaxBtn">
 	
 	<div id="disp"></div>
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-document.getElementById("ajax").addEventListener("click", function(){
+
+
+$(document).ready(function(){
+	$('#ajaxBtn').click(function(){
+		 var array = new Array();
+		     array[0] = "a";
+		     array[1] = "b";
 	$.ajax({
 		type : 'get',
-		url:"tools.json",
+		url:"restcontroller.json",
 		dataType:"json",
 		success:function(data){
 			console.log(data);
@@ -39,6 +46,9 @@ document.getElementById("ajax").addEventListener("click", function(){
 		}
 	});
 });
+});
+
+
 </script>
 
 </body>

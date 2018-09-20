@@ -2,9 +2,7 @@ package net.json.ajax;
 
 import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import net.json.ajax.DataStructure;
 
@@ -34,45 +32,6 @@ public class JsonController {
 		
 		return list;
 	}
-	
-	@RequestMapping(value="tools.json", method = RequestMethod.GET)
-	public List<Map<String, Object>> tools(){
-		
-		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-			
-		Map<String, Object> map = new HashMap<String, Object>();
-		
-		map.put("name", "Programming Language - Java");
-		map.put("description", "사람의 생각을 컴퓨터에서 실행하기 위한 도구");
-		list.add(map);
-		
-		map = new HashMap<String, Object>();
-		map.put("name", "IDE - Eclipse");
-		map.put("description", "소스 코드를 작성하고 컴파일하고 실행할 수 있는 도구");
-		list.add(map);
-		
-		map = new HashMap<String, Object>();
-		map.put("name", "Web Server - Apache Web Server");
-		map.put("description", "URL을 가지고 요청하면 필요한 자원을 찾아주는 도구");
-		list.add(map);
-		
-		map = new HashMap<String, Object>();
-		map.put("name", "WAS - tomcat");
-		map.put("description", "Web Server가 URL을 가지고 요청하면 필요한 객체를 가지고 작업을 수행한 후 결과를 전달해주는 도구");
-		list.add(map);
-		
-		map = new HashMap<String, Object>();
-		map.put("name", "Database - Oracle");
-		map.put("description", "데이터를 반영구적으로 저장하고 편리하게 관리해주는 도구");
-		list.add(map);
-		
-		map = new HashMap<String, Object>();
-		map.put("name", "Framework - Spring, MyBatis, Hibernate");
-		map.put("description", "프로그램 개발을 빠르고 쉽게 해주는 도구");
-		list.add(map);
-		
-        return list;
-		
-	}
+
 
 }

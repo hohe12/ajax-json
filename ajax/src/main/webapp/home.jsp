@@ -8,9 +8,9 @@
 </head>
 <body>
 
-	<br/><br/><br/>
-	RestController이용 <input type="button" value="Hello AJAX!" id="ajaxBtn">
-	
+	<br/><br/>
+	&nbsp;&nbsp;<h3>@RestController이용 <input type="button" value="AJAX!" id="ajaxBtn"></h3>
+	<hr>	
 	<div id="disp"></div>
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

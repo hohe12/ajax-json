@@ -8,11 +8,8 @@
 </head>
 <body>
 
-	<a href="responsebody.json">ResponseBody이용</a><br/><br/>
-	<a href="jacksonview.json">JacksonView이용</a><br/><br/>
-	<a href="restcontroller.json">RestController이용</a><br/><br/>
-	<!-- <a href="#">ajax 이용</a><br/><br/><br/> -->
-	<input type="button" value="Hello AJAX!" id="ajaxBtn">
+	<br/><br/><br/>
+	RestController이용 <input type="button" value="Hello AJAX!" id="ajaxBtn">
 	
 	<div id="disp"></div>
 	
